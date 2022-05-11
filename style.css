@@ -1,0 +1,117 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.35%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 25em) {
+    html {
+      font-size: 40%;
+    }
+}
+
+:root{
+    --primary-color-1: #EB6A24;
+    --primary-color-2: #0A4554;
+    --primary-color-3: #D85811;
+    --primary-colot-4: #45484D;
+}
+
+body{
+    margin: 0;
+}
+
+.coverVideoContainer{
+    height: 40vh;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverImgContainer{
+    width: 80%;
+    z-index: 4;
+}
+
+.coverImg{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.video-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+video{
+    width: 100%;
+    object-fit: cover;
+    height: inherit;
+}
+
+.color-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
+.tab-links{
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    justify-content: space-around;
+    z-index: 4;
+    font-family: "Kalam", sans-serif;
+}
+
+.tab-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .tabContentSection{
+    height: 50vh;
+}
+
+.happybirthdayfooter{
+    height: 20vh;
+} */
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--primary-color-3), 0 0 40px var(--primary-color-3), 0 0 50px var(--primary-color-3), 0 0 60px var(--primary-color-3), 0 0 70px var(--primary-color-3),;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px var(--primary-color-3), 0 0 40px var(--primary-color-3), 0 0 50px var(--primary-color-3), 0 0 60px var(--primary-color-3), 0 0 70px var(--primary-color-3), 0 0 80px var(--primary-color-3);
+    }
+  }
