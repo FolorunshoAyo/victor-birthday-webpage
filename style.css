@@ -1,4 +1,6 @@
 *, *::after, *::before{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -29,10 +31,11 @@
 
 body{
     margin: 0;
+    height: 100vh;
 }
 
 .coverVideoContainer{
-    height: 40vh;
+    height: 30vh;
     max-width: 100%;
     position: relative;
     display: flex;
@@ -49,8 +52,6 @@ body{
     width: 100%;
     height: 100%;
 }
-
-
 
 .video-container{
     position: absolute;
@@ -87,7 +88,6 @@ video{
     left: 0px;
     width: 100%;
     display: flex;
-    color: rgba(255, 255, 255, 0.7);
     justify-content: space-around;
     z-index: 4;
     font-family: "Kalam", sans-serif;
@@ -95,23 +95,111 @@ video{
 
 .tab-link{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* .tabContentSection{
-    height: 50vh;
+.tab-link{
+    flex: 0 0 30%;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.happybirthdayfooter{
+.tab-link span{
+    cursor: pointer;
+}
+
+.tab-link span:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tab-link.active span{
+    color: #fff;
+}
+
+.tab-link img{
+    margin-top: -5px;
+    height: 7px;
+    display: none;
+}
+
+.tab-link.active img{
+    display: block;
+}
+
+.line-1{
+    width: 50%;
+}
+
+.line-2{
+    width: 43%;
+}
+
+.line-3{
+    width: 35%;
+}
+
+.tabContentSection{
+    height: 60vh;
+    /* overflow-x: hidden; */
+}
+
+.tabContentContainer{
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    /* transform: translateX(-100vw); */
+}
+
+.tabContent{
+    width: 100vw;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 4rem;
+    height: 60%;
+    background-color: var(--primary-color-2);
+}
+
+.catchyMsgContainer{
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    width: 40%;
+}
+
+.catchyMsgTitle{
+    font-size: 6rem;
+    line-height: 1.0;
+    font-family: "kalam", sans-serif;
+}
+
+.catchyMsgCaption{
+    font-size: 3rem;
+    font-family: "Tangerine", sans-serif;
+}
+
+.catchyMsgContainer img{
+    width: 50%; 
+}
+
+.catchyMsg{
+    margin: 2rem 0;
+    font: "Lato", sans-serif;
+}
+
+.firstSectionVideo{
+    width: 50%;
+}
+
+.firstSectionVideoContainer video{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .happybirthdayfooter{
     height: 20vh;
 } */
-
-@keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--primary-color-3), 0 0 40px var(--primary-color-3), 0 0 50px var(--primary-color-3), 0 0 60px var(--primary-color-3), 0 0 70px var(--primary-color-3),;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px var(--primary-color-3), 0 0 40px var(--primary-color-3), 0 0 50px var(--primary-color-3), 0 0 60px var(--primary-color-3), 0 0 70px var(--primary-color-3), 0 0 80px var(--primary-color-3);
-    }
-  }
