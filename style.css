@@ -340,3 +340,64 @@ video{
     font-weight: bold;
 }
 
+.second-tab-container,
+.third-tab-container{
+    padding: 4rem 2rem;
+}
+
+.second-tab-container{
+    background-color: #32bfe2;
+    height: 60vh;
+}
+
+.third-tab-container{
+    background-color: rgba(15, 82, 99, .7);
+}
+
+.gif-image-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.gif-image-container img{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.birthday-code-container{
+    margin: 5rem 0 2rem;
+}
+
+.code-content{
+    margin-left: -80px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #34568B;
+}
+
+.image-gallery-collection{
+    margin: 3rem 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.singleImg{
+    flex: 0 0 48%;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.singleImgContainer{
+    margin-top: -30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.singleImgContainer img{
+    width: 95%;
+    height: 300px;
+}
