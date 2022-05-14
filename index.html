@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Tangerine:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Oleo+Script+Swash+Caps:wght@400;700&family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -25,7 +25,7 @@
 
       <div class="video-container">
         <div class="color-overlay"></div>
-        <video loop>
+        <video loop id="overlay-video">
           <source src="assets/videos/original-video.mp4" type="video/mp4" />
         </video>
       </div>
@@ -58,24 +58,49 @@
       </div>
     </section>
     <section class="tabContentSection">
-      <div class="tabContentContainer">
+      <div class="tabContentContainer content1">
         <div class="tabContent tabContent1">
           <div class="first-section">
+            <div class="first-section-color-overlay"></div>
             <div class="catchyMsgContainer">
-              <h2 class="catchyMsgTitle">Lorem, ipsum.</h2>
-              <span class="catchyMsgCaption">Lorem, ipsum dolor.</span>
+              <h2 class="catchyMsgTitle">I Adore You!!</h2>
+              <span class="catchyMsgCaption">I am so glad you came to me</span>
               <p class="catchyMsg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-                inventore perferendis vel quis laborum dignissimos?
+                You fill my world with excitement, pleasure and joy 🥺❤️.
               </p>
-              <img src="assets/images/love_dividing_line.png" alt="love dividing line" class="catchyMsgDividingLine">
+              <img
+                src="assets/images/love_dividing_line.png"
+                alt="love dividing line"
+                class="catchyMsgDividingLine"
+              />
             </div>
             <div class="firstSectionVideo">
-                <div class="firstSectionVideoContainer">
-                    <video loop>
-                        <source src="assets/videos/original-video.mp4" type="video/mp4"/>
-                    </video>
+              <div class="firstSectionVideoContainer">
+                <div class="play-pause-container">
+                  <img src="assets/icons/play-button.svg" class="playIcon" alt="play icon" />
                 </div>
+                <video loop id="first-section-video">
+                  <source
+                    src="assets/videos/birthday-video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="second-section">
+            <div class="second-section-color-overlay"></div>
+            <div class="second-section-content">
+              <p class="line">
+                I admire so many things about you. 
+                <br />
+                Your dashing good looks, your charm, your sense of humor, and
+                most of all your compassion.
+              </p>
+              <p class="line">
+                Being in a relationship with a man like you has been truly life changing. <br/>
+                On your birthday and every other day, I want you to know how incredibly blessed to be your woman.
+              </p>
             </div>
           </div>
         </div>
@@ -85,9 +110,11 @@
     </section>
     <footer class="happybirthdayfooter">
       <div class="footer-caption">
-        <!-- Some text is gonna be here -->
+        <span class="footer-text">Happy Birthday Love.</span>
+        <img src="assets/images/love_dividing_line.png" alt="love dividing line">
       </div>
-      <div class="who-made-it">made with ❣️ by dami's brother.</div>
+      <div class="who-made-it">Made with ❣️ by dami's brother</div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
