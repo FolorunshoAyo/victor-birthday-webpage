@@ -180,7 +180,7 @@ video{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
-    background-size: 384px 100%;
+    background-size: 100% 100%;
 }
 
 .first-section{
@@ -192,7 +192,6 @@ video{
 }
 
 .second-section{
-    height: 70%;
     background-image: url("assets/images/celebrant-10.jpeg");
 }
 
