@@ -1,6 +1,7 @@
 (function(){
     const overlayVideo = document.getElementById("overlay-video");
     const coverImage = document.querySelector(".coverImg");
+    const techImage = document.querySelector(".gif-image-container img");
 
     coverImage.addEventListener("click", () => {
         overlayVideo.play();
@@ -17,6 +18,15 @@
 
             getInitialEl.classList.remove("active");
             parentEl.classList.add("active");
+
+            if(tabNo === 2){
+                console.log("animation activated");
+                setTimeout(() => {
+                    techImage.classList.remove("animate__backInDown");
+                    techImage.classList.add("animate__backInDown");
+                }, 1000)
+            }
+
             initialTabNo = tabNo;
         };
 
