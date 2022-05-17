@@ -20,7 +20,6 @@
             parentEl.classList.add("active");
 
             if(tabNo === 2){
-                console.log("animation activated");
                 setTimeout(() => {
                     techImage.classList.remove("animate__backInDown");
                     techImage.classList.add("animate__backInDown");
